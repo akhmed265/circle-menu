@@ -1,0 +1,163 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu {
+    margin: 50px 0;
+}
+
+ul {
+    width: 260px;
+    height: 260px;
+    padding: 0px;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    border: 3px solid #ff0000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+li {
+    position: absolute;
+    border: 1px solid #ff0000;
+    width: 140px;
+    height: 140px;
+    left: -10px;
+    top: -10px;
+    transform-origin: 100% 100%; 
+    overflow: hidden;
+}  
+
+li:nth-child(1){
+    transform: rotate(0deg) skew(30deg);
+}
+
+li:nth-child(2) {
+    transform: rotate(60deg) skew(30deg);
+
+    }   
+
+li:nth-child(3) {
+    transform: rotate(120deg) skew(30deg);
+
+}
+
+li:nth-child(4) {
+    transform: rotate(180deg) skew(30deg);
+
+}
+
+li:nth-child(5) {
+    transform: rotate(240deg) skew(30deg);
+    transform: translate(-50% -50%) rotate(-120deg);
+
+}
+
+li:nth-child(6) {
+    transform: rotate(300deg) skew(30deg);
+
+}
+
+
+
+
+.menu__1:hover .menu__linl {
+    background-color: #ff0000;
+}
+
+.menu__linl {
+    display: block;
+    background-color: #000000;
+    position: relative;
+    width: 178px;
+    height: 167px;
+    transition: .5s;
+   
+}
+
+
+
+a {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin-left: -9px;
+    margin-top: 44px;
+    background-color: #fff;
+    transform: skew(-30deg) rotate(-60deg);
+}
+
+img {
+    width: 55px;
+    display: block;
+    position: absolute;
+    left: 46%;
+    top: 24%;
+    transform: translate(-50% -50%);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.squid {
+    transform: rotate(60deg);
+}
+
+.game {
+    transform: rotate(300deg);
+}
+
+.gto {
+    transform: rotate(120deg);
+}
+
+.vikings {
+    transform: rotate(180deg);
+}
+
+.berserk {
+    transform: rotate(240deg);
+}
+
+
+
+/*
+НАПИСАЛ, А ПОТОМ ПОДУМАЛ "А ЧТО БУДЕТ ЕСЛИ Я ДОБАВЛЮ 2 КЛАСС ДЛЯ ЭТОЙ ФУНКЦИИ. СРАБОТАЛО )))"
+.game {
+    border-radius: 50%;
+}
+
+.squid {
+    border-radius: 50%;
+}
+
+.bald {
+    border-radius: 50%;
+}
+
+.vikings {
+    border-radius: 50%;
+}
+
+.berserk {
+    border-radius: 50%;
+}
+
+.gto {
+    border-radius: 50%;
+}
+
+
